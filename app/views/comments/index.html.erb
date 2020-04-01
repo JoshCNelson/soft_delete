@@ -1,0 +1,5 @@
+<ul>
+  <% @comments.each do |comment| %>
+    <li><%= comment.body %>: <%= link_to 'Destroy', { controller: "comments", action: "destroy", id: comment }, method: :delete %></li>
+  <% end %>
+</ul>
